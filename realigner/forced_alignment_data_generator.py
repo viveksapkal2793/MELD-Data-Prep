@@ -448,7 +448,7 @@ def generate_forced_alignment_data():
                             orig_dia_id, orig_utt_id = df.loc[df[(df["Corrected Dialogue_ID"] == corr_dia_id) & (df["Corrected Utterance_ID"] == end_at[1])].index[0], ["Dialogue_ID", "Utterance_ID"]].values
                             realignment_df.loc[len(realignment_df)] = [s, corr_dia_id, idx_sent, orig_dia_id, orig_utt_id, 0, end_ts / cfg.sr]
     
-    os.makedirs(os.path.dirname(cfg.realignment_timestamps_csv, exist_ok = True)
+    os.makedirs(os.path.dirname(cfg.realignment_timestamps_csv, exist_ok = True))
     realignment_df.to_csv(cfg.realignment_timestamps_csv, float_format = "%.7f", index = False)
 
 
