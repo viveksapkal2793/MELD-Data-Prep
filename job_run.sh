@@ -21,16 +21,4 @@ mkdir -p logs
 # Activate virtual environment
 source meld-data-prep/bin/activate
 
-# Set CUDA 12.2 environment variables
-# export CUDA_HOME=/usr/local/cuda
-# export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-# export PATH=/usr/local/cuda/bin:$PATH
-
-# # Set environment variables
-# export HF_HOME=/scratch/data/bikash_rs/vivek/huggingface_cache
-# export CUDA_VISIBLE_DEVICES=0
-# export TRANSFORMERS_CACHE=$HF_HOME
-# export HF_DATASETS_CACHE=$HF_HOME
-# mkdir -p $HF_HOME
-
-python realigner/realigned_video_assembler.py
+python realigner/realigned_video_assembler_pyav.py
