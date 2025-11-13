@@ -7,7 +7,7 @@ import av
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import config as cfg
-from audio import audio_extractor
+# from audio import audio_extractor
 
 
 def extract_video_segment(input_path, output_path, start_time, end_time, fps):
