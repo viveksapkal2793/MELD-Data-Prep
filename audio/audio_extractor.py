@@ -7,8 +7,8 @@ import numpy as np
 import pandas as pd
 import torch
 import torchaudio
-
-from .. import config as cfg
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import config as cfg
 
 
 def extract_utterance_data(dia, utt, corr_utt, time_offset, time_duration):

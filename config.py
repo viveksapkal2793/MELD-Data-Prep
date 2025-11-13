@@ -11,7 +11,8 @@ meld_raw_folder = os.path.join(meld_folder, "MELD.Raw")
 meld_original_video_folders = {
                                 "train" : os.path.join(meld_raw_folder, "train_splits"),
                                 "dev"   : os.path.join(meld_raw_folder, "dev_splits_complete"),
-                                "test"  : os.path.join(meld_raw_folder, "output_repeated_splits_test")
+                                # "test"  : os.path.join(meld_raw_folder, "output_repeated_splits_test")
+                                "test"  : "D:\\Acads\\BTP\\temp\\output_repeated_splits_test"
                               }
 # List of identifications (split, dialogue id, utterance id) of original MELD videos whose files are corrupted
 corrupted_utt_videos = {"train" : [(125, 3)], "dev" : [], "test" : []}
@@ -44,13 +45,21 @@ meld_alt_res = (384, 496)
 # List of identifications (split, dialogue id) of MELD videos with a resolution of 496x384 and sampled at 25 fps 
 alt_video_prop_dialogues = {"train" : [128, 203, 383, 517, 710, 967], "dev" : [88], "test" : [184]} # Dialogues whose videos properties are not the ones common to most of MELD videos, but an alternative variation
 
+# Custom output directory for realigned data (CHANGE THIS TO YOUR DESIRED PATH)
+custom_realigned_output_folder = "D:\\Acads\\BTP\\MELD_Realigned_Output"
+
 # Folder where the data of realigned version of MELD is stored
-meld_realigned_folder = os.path.join(meld_folder, "realigned")
+meld_realigned_folder = custom_realigned_output_folder
+
+# Folder where the data of realigned version of MELD is stored
+# meld_realigned_folder = os.path.join(meld_folder, "realigned")
 # Path of the CSV with the data of a given split of the realigned MELD
 meld_realigned_csv = {s : os.path.join(meld_realigned_folder, f"realigned_{s}_sent_emo.csv") for s in splits}
 
 # Path of the CSV with the realignment timestamps
-realignment_timestamps_csv = os.path.join(meld_realigned_folder, "MELD_video_realignment_timestamps.csv")
+# realignment_timestamps_csv = os.path.join(meld_realigned_folder, "MELD_video_realignment_timestamps.csv")
+realignment_timestamps_csv = os.path.join(meld_realigned_folder, "MELD_video_realignment_timestamps_test.csv")
+
 # Path of the CSV with the information of the bounding box of every face captured in each video of realigned MELD
 facetracks_csv = os.path.join(meld_realigned_folder, "MELD_all_faces_bboxes_and_tracks.csv")
 # Path of the CSV with the information of the bounding box of the face of the person identified as the active speaker in each video of realigned MELD

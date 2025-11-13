@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MELD Data Files
+MELD/realigned/train/
+MELD/realigned/dev/
+MELD/realigned/test/
+MELD/original_audio_tmp/
+MELD/MELD.Raw/
+
+# Large model files
+*.pth
+*.model
+*.ckpt
+pretrain_AVA.model
+
+# Temporary files
+*.tmp
+tmp/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
