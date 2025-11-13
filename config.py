@@ -46,7 +46,7 @@ meld_alt_res = (384, 496)
 alt_video_prop_dialogues = {"train" : [128, 203, 383, 517, 710, 967], "dev" : [88], "test" : [184]} # Dialogues whose videos properties are not the ones common to most of MELD videos, but an alternative variation
 
 # Custom output directory for realigned data (CHANGE THIS TO YOUR DESIRED PATH)
-custom_realigned_output_folder = "D:\\Acads\\BTP\\MELD_Realigned_Output"
+custom_realigned_output_folder = "D:\\Acads\\BTP\\temp\\sample_realigned_test_2"
 
 # Folder where the data of realigned version of MELD is stored
 meld_realigned_folder = custom_realigned_output_folder
@@ -58,7 +58,8 @@ meld_realigned_csv = {s : os.path.join(meld_realigned_folder, f"realigned_{s}_se
 
 # Path of the CSV with the realignment timestamps
 # realignment_timestamps_csv = os.path.join(meld_realigned_folder, "MELD_video_realignment_timestamps.csv")
-realignment_timestamps_csv = os.path.join(meld_realigned_folder, "MELD_video_realignment_timestamps_test.csv")
+# realignment_timestamps_csv = os.path.join(meld_realigned_folder, "MELD_video_realignment_timestamps_test_sample.csv")
+realignment_timestamps_csv = "D:\\Acads\\BTP\\MELD-FAIR-main\\MELD\\realigned\\MELD_video_realignment_timestamps_test_sample.csv"
 
 # Path of the CSV with the information of the bounding box of every face captured in each video of realigned MELD
 facetracks_csv = os.path.join(meld_realigned_folder, "MELD_all_faces_bboxes_and_tracks.csv")
